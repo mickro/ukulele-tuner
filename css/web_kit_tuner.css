@@ -1,0 +1,26 @@
+/* Safari and Chrome */
+
+#foreground {
+  top: 35px;
+}
+
+#strings {
+    -webkit-animation: unroll 9s ease-out 0s 1 normal;
+}
+
+@-webkit-keyframes unroll
+{
+  0%   { height: 35px; }
+  10%   { height: 35px; }
+  100% { height: 427px; }
+}
+
+#ukulele {
+  -webkit-animation: from_top 9s ease-out 0s 1 normal;
+}
+
+@-webkit-keyframes from_top
+{
+  0%   { top: 1600px; }
+  100% { top: 5px; }
+}

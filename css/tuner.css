@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Marcelle;
+  src: url('../font/Marcsc___.ttf');
+}
+
+body {
+  font-family: "arial", "sans-serif";
+  font-size: small;
+  background-color: #404040;
+}
+
+.title {
+ font-size: xx-large;
+ padding-bottom: 20px;
+ margin-bottom: 5px;
+ text-shadow: 2px 2px 2px #bbb;
+ border-bottom: 2px solid;
+ font-family: "Marcelle", "Times New Roman",Georgia, Serif;
+}
+
+.bold {
+  font-weight:bold;
+  display: inline;
+}
+
+.normal {
+  font-weight:normal;
+  display: inline;
+}
+
+#background-content-effect {
+  border-top: thin solid #EEE;
+  border-bottom: thin solid #EEE;
+  height: 546px;
+  width: 100%;
+  position:absolute; 
+  top: 50%;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  margin-top: -273px;
+}
+
+#background-content {
+  height: 540px;
+  width: 100%;
+  background-color: #AAA;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#content {
+  width: 640px;
+  height: 540px;
+  background-color: #AAA;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -320px;
+}
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#foreground {
+  position: absolute;
+  top: 55px;
+  right: 140px;
+}
+
+#ukulele {
+  animation: from_top 9s ease-out 0s 1 normal;
+  width: 180px;
+  top: 5px;
+  position: absolute;
+}
+
+@keyframes from_top
+{
+  0%   { top: 1600px; }
+  100% { top: 5px; }
+}
+
+#strings {
+  width: 320px;
+  padding: 20px;
+  border:2px solid;
+  border-radius:25px;
+  box-shadow: 2px 2px 2px #222;
+  background-color: #DDD;
+  position: relative;
+  animation: unroll 9s ease-out 0s 1 normal;
+  height: auto;
+  overflow: hidden;
+}
+
+@keyframes unroll
+{
+  0%   { height: 35px; }
+  10%   { height: 35px; }
+  100% { height: 360px; }
+}
+
+#credits {
+  font-size: xx-small;
+  text-align: center;
+  
+ font-family: "arial", "sans-serif";
+}
+
+a, a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
